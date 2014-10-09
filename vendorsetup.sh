@@ -1,3 +1,4 @@
+
 #
 # Copyright 2012 The Android Open Source Project
 #
@@ -5,7 +6,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,11 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+add_lunch_combo slim_e980-userdebug
+add_lunch_combo carbon_e980-userdebug
+add_lunch_combo mahdi_e980-userdebug
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_e980.mk \
-    $(LOCAL_DIR)/e980.mk \
-    $(LOCAL_DIR)/mahdi.mk \
-    
-    
 
