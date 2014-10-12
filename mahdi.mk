@@ -7,6 +7,7 @@ $(call inherit-product, device/lge/e980/full_e980.mk)
 # phone
 $(call inherit-product, vendor/mahdi/configs/common_full_phone.mk)
 $(call inherit-product, vendor/mahdi/configs/gsm.mk)
+$(call inherit-product, vendor/mahdi/configs/common.mk)
 
 # products
 PRODUCT_DEVICE := e980
