@@ -39,8 +39,7 @@ WIFI_BAND                        := 802_11_ABG
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 
-BOARD_USE_CUSTOM_RECOVERY_FONT:= \"roboto_23x41.h\"
-TARGET_RECOVERY_FSTAB = device/lge/e980/fstab.geefhd
+TARGET_RECOVERY_FSTAB = device/lge/e980/twrp/twrp.fstab
 ENABLE_LOKI_RECOVERY := true
 BOARD_RECOVERY_SWIPE := true
 

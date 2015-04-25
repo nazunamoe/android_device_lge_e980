@@ -20,6 +20,17 @@
 # Get the long list of APNs
 PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
+# MultiROM & TWRP
+PRODUCT_COPY_FILES += \
+ $(LOCAL_PATH)/twrp/twrp.fstab:recovery/root/etc/twrp.fstab \
+ $(LOCAL_PATH)/twrp/init.recovery.g2.rc:recovery/root/init.recovery.g2.rc \
+
+PRODUCT_PACKAGES+= \
+	mr_unloki.sh \
+	mr_loki.sh \
+	loki_tool 
+
+
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
