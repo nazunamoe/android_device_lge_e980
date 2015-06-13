@@ -18,5 +18,4 @@ add_lunch_combo slim_e980-userdebug
 add_lunch_combo carbon_e980-userdebug
 add_lunch_combo mahdi_e980-userdebug
 add_lunch_combo eos_e980-userdebug
-
-
+add_lunch_combo sokp_e980-userdebug
