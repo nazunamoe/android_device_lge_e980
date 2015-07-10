@@ -1,0 +1,12 @@
+[
+ {
+   "repository": "android_device_lge_gproj-common",
+   "target_path": "device/lge/gproj-common",
+   "revision": "lp5.1"
+ },
+ {
+   "repository": "NB_GProj_Kernel",
+   "target_path": "kernel/lge/gproj",
+   "revision": "cm12.1-e980"
+ }
+]
