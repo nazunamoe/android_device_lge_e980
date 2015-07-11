@@ -1,13 +1,18 @@
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+# OVERLAY_TARGET adds overlay asset source
+OVERLAY_TARGET := pa_xhdpi
 
-# Inherit some common slim stuff.
-$(call inherit-product, vendor/pa/config/common_full_phone.mk)
+# Build paprefs from sources
+PREFS_FROM_SOURCE ?= false
+
+# Include AOSPA common configuration
+include vendor/pa/main.mk
 
 # Enhanced NFC
-$(call inherit-product, vendor/pa/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/pa/configs/nfc_enhanced.mk)
+
+# Inherit telephony common stuff
+$(call inherit-product, vendor/pa/configs/telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/e980/full_e980.mk)
