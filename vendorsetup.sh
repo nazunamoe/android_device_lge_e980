@@ -22,3 +22,4 @@ add_lunch_combo sokp_e980-userdebug
 add_lunch_combo pa_e980-userdebug
 add_lunch_combo bliss_e980-userdebug
 add_lunch_combo xenonhd_e980-userdebug
+add_lunch_combo aosp_e980-userdebug

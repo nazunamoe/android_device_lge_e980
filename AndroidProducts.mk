@@ -16,6 +16,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_e980.mk \
+	$(LOCAL_DIR)/aosp_e980.mk \
     $(LOCAL_DIR)/e980.mk \
     $(LOCAL_DIR)/mahdi.mk \
     $(LOCAL_DIR)/eos.mk
