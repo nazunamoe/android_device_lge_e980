@@ -30,6 +30,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+PRODUCT_COPY_FILES += \
+    device/lge/e980/kernel:kernel
+
 PRODUCT_PACKAGES += \
 	lights.geefhd \
 	camera.geefhd
