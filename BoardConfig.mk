@@ -55,6 +55,3 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/lge/gproj-common/loki
 MALLOC_IMPL := dlmalloc
 
 COMMON_GLOBAL_CFLAGS += -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
-
-BOARD_SEPOLICY_DIRS += \
-        device/lge/e980/sepolicy
