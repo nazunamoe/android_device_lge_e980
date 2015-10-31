@@ -67,6 +67,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
 
+# Add bluetooth framework file...
+PRODUCT_COPY_FILES += \
+       device/lge/e980/bluetooth_extras/framework/com.broadcom.bt.jar:system/framework/com.broadcom.bt.jar \
+
+# Add bluetooth libs and binaries. Those should be in vendor/lge/e980, but that one needs some updating...
+PRODUCT_COPY_FILES += \
+       device/lge/e980/bluetooth_extras/lib/libbluedroid_bdt.so:system/lib/libbluedroid_bdt.so \
+       device/lge/e980/bluetooth_extras/lib/libbluetooth_jni.so:system/lib/libbluetooth_jni.so \
+       device/lge/e980/bluetooth_extras/lib/libbluetoothsettings_jni.so:system/lib/libbluetoothsettings_jni.so \
+       device/lge/e980/bluetooth_extras/xbin/hciconfig:system/xbin/hciconfig \
+       device/lge/e980/bluetooth_extras/xbin/hcidump:system/xbin/hcidump \
+       device/lge/e980/bluetooth_extras/xbin/hcitool:system/xbin/hcitool \
+
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/keypad_8064.kl:system/usr/keylayout/gk-keypad-8064.kl
 
