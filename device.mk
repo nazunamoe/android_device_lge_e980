@@ -40,6 +40,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/thermald-geefhd.conf:system/etc/thermald.conf
 
+       device/lge/e980/bluetooth_extras/etc/audio.conf:system/etc/bluetooth/audio.conf \
+       device/lge/e980/bluetooth_extras/etc/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
+       device/lge/e980/bluetooth_extras/etc/auto_pairing.conf:system/etc/bluetooth/auto_pairing.conf \
+       device/lge/e980/bluetooth_extras/etc/avrcp_toggle_white_list.conf:system/etc/bluetooth/avrcp_toggle_white_list.conf \
+       device/lge/e980/bluetooth_extras/etc/blacklist.conf:system/etc/bluetooth/blacklist.conf \
+       device/lge/e980/bluetooth_extras/etc/block_avrcp_toggle_new.conf:system/etc/bluetooth/block_avrcp_toggle_new.conf \
+       device/lge/e980/bluetooth_extras/etc/bt.a2dp.tuning.sh:system/etc/bluetooth/bt.a2dp.tuning.sh \
+       device/lge/e980/bluetooth_extras/etc/bt_did.conf:system/etc/bluetooth/bt_did.conf \
+       device/lge/e980/bluetooth_extras/etc/bt_stack.conf:system/etc/bluetooth/bt_stack.conf \
+       device/lge/e980/bluetooth_extras/etc/bt_tts_list.conf:system/etc/bluetooth/bt_tts_list.conf \
+       device/lge/e980/bluetooth_extras/etc/carkit_cod_headsets.conf:system/etc/bluetooth/carkit_cod_headsets.conf \
+       device/lge/e980/bluetooth_extras/etc/device_config.xml:system/etc/bluetooth/device_config.xml \
+       device/lge/e980/bluetooth_extras/etc/input.conf:system/etc/bluetooth/input.conf \
+       device/lge/e980/bluetooth_extras/etc/iop_bt.db:system/etc/bluetooth/iop_bt.db \
+       device/lge/e980/bluetooth_extras/etc/main.conf:system/etc/bluetooth/main.conf \
+       device/lge/e980/bluetooth_extras/etc/network.conf:system/etc/bluetooth/network.conf \
+       device/lge/e980/bluetooth_extras/etc/ble_stack.conf:system/etc/bluetooth/ble_stack.conf \
+
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/initlogo.rle:root/initlogo.rle888 \
 	$(LOCAL_PATH)/init.geefhd.rc:root/init.geefhd.rc \
