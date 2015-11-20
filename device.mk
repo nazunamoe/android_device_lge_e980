@@ -38,8 +38,10 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/mixer_paths.xml:system/etc/mixer_paths.xml
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/thermald-geefhd.conf:system/etc/thermald.conf
+	$(LOCAL_PATH)/thermald-geefhd.conf:system/etc/thermald.conf \
 
+# Add bluetooth configuration from stock
+PRODUCT_COPY_FILES += \
        device/lge/e980/bluetooth_extras/etc/audio.conf:system/etc/bluetooth/audio.conf \
        device/lge/e980/bluetooth_extras/etc/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
        device/lge/e980/bluetooth_extras/etc/auto_pairing.conf:system/etc/bluetooth/auto_pairing.conf \
